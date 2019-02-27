@@ -1,0 +1,27 @@
+
+#landPage {
+  width: 100%;
+}
+
+.features {
+  display: grid;
+  justify-content:center;
+  grid-template-columns: 23% 23% 23% 23% ;
+  grid-column-gap:1.5%;
+  margin-top: 15px;
+
+  div {
+    img {
+      height: 250px;
+      width: 100%;
+      object-fit:cover;
+    }
+
+    p {
+      color: $sea-foam;
+      background-color: $dark-blue;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+}
