@@ -56,7 +56,7 @@ Describe how the site is responsive, and what different 'versions' this project 
 
 ### Setup Instructions
 
-Describe how someone can clone and launch this project.
+
 
 ### Roadmap
 

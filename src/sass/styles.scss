@@ -2,8 +2,9 @@
 @import 'variable';
 @import 'typefaces';
 @import 'navigation';
+@import 'mixin';
 @import "pages/landing";
 
 body {
-  background-color: $sea-foam;  
+  background-color: $sea-foam;
 }
