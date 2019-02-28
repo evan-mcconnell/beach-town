@@ -56,7 +56,11 @@ Describe how the site is responsive, and what different 'versions' this project 
 
 ### Setup Instructions
 
-
+Since this project uses NPM and webpack, in order to view it you should:
+* Clone this repository
+* Make sure you have NodeJS and NPM installed
+* Cd into the root directory and install the dependancies by writing: npm install
+* Once this is finished enter this into your terminal: npm run start
 
 ### Roadmap
 
