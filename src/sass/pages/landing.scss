@@ -1,9 +1,8 @@
 
 
+
 #nav-logo{
-  @include mediaQuery(1000px){
-    display:none;
-  }
+  display:none;
 }
 
 #landPage {
@@ -14,9 +13,9 @@
   position:relative;
 }
 
-#splash-logo{
-  display: none;
-  @include mediaQuery(1000px) {
+
+.logo-wave{
+  font-family: satisfy, cursive;
     display: block;
     position:absolute;
     left:50%;
@@ -24,8 +23,50 @@
     transform:translate(-50%,-50%);
     width:50%;
     z-index:1;
+  h1 {
+    @include mediaQuery (800px) {
+      font-size: 100px;
+      font-weight: lighter;
+    }
+    @include mediaQuery (500px) {
+      font-size: 60px;
+      font-weight: lighter;
+    }
+    font-size: 140px;
+    color: #A7E2FF;
+    text-transform: capitalize;
+  }
+  h2 {
+    @include mediaQuery (800px) {
+      font-size: 100px;
+      top: -40px;
+      font-weight: lighter;
+    }
+    @include mediaQuery (500px) {
+      font-size: 60px;
+      top: -20px;
+      right: -30px;
+      font-weight: lighter;
+    }
+    font-size: 140px;
+    color: #E7DFC2;
+    text-transform: capitalize;
+    position: relative;
+    right: -70px;
+    top: -70px;
+    animation: leSnake 1.5s ease-in-out; animation-iteration-count: infinite;
   }
 }
+
+@keyframes leSnake {
+    0% {
+      transform: translateY(0px)
+    }
+    50% {
+      transform: translateY(30px)
+    }
+}
+
 
 
 .dark-screen:after {
@@ -69,4 +110,21 @@
       padding: 15px;
     }
   }
+}
+
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

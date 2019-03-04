@@ -20,7 +20,7 @@ nav{
   }
   img {
     width: 50px;
-    @include mediaQuery(325px){
+    @include mediaQuery(450px){
       width: 35px;
       }
     }
@@ -28,7 +28,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }
 
