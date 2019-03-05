@@ -85,7 +85,7 @@
   justify-content:center;
   grid-template-columns: 23% 23% 23% 23% ;
   grid-column-gap:1.5%;
-  margin-top: 15px;
+  margin-top: 30px;
   @include mediaQuery(1000px){
     grid-template-columns: 45% 45%;
     grid-row-gap: 1.5%;
